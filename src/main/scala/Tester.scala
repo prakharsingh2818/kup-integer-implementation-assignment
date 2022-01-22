@@ -67,7 +67,7 @@ object Tester extends App {
    */
   println("------PLUS------")
   println("1 + 0: " + (one + Zero).printNumber)
-  println("(-2) = 0: " + (minusTwo + Zero).printNumber)
+  println("(-2) + 0: " + (minusTwo + Zero).printNumber)
   println("1 + 2: " + (one + two).printNumber)
   println("2 + 3: " + (two + three).printNumber)
   println("3 + 4: " + (three + four).printNumber)
