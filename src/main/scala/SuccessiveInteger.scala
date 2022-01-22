@@ -2,7 +2,7 @@ import scala.annotation.tailrec
 
 case class SuccessiveInteger(number: Integer, sign: Sign = Positive) extends Integer {
 
-  override def isZero: Boolean = if (this == Zero) true else false
+  override def isZero: Boolean = false
 
   override def predecessor: Integer = number
 

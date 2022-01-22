@@ -1,4 +1,3 @@
-
 case object Zero extends Integer {
   def isZero: Boolean = true
 

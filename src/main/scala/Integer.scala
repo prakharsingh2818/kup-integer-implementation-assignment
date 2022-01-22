@@ -16,7 +16,5 @@ trait Integer extends Nat {
   def getSign: Sign
 
   def printNumber: String
-
-
 }
 

@@ -50,5 +50,4 @@ class SuccessiveIntegerTest extends AnyFlatSpec {
   it should "return false if the integer is Negative" in {
     assert(!minusOne.isPositive)
   }
-
 }
