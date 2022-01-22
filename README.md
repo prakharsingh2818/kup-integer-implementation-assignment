@@ -3,8 +3,8 @@
 ### The program supports following functions: 
 1. nextInteger: returns next integer
 2. previousInteger: returns previous integer
-3. + -> perform add operation
-4. - -> performa subtraction operation
+3. (+):perform add operation
+4. (-): performa subtraction operation
 5. negate: negates the integer
 5. isPositive: checks if the integer is positive
 6. isZero: checks if integer is Zero
