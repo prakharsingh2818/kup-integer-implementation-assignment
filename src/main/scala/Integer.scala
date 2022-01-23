@@ -1,9 +1,9 @@
 trait Integer extends Nat {
   def isZero: Boolean
 
-  def predecessor: Integer
+  def previousInteger: Integer
 
-  def successor: Integer
+  def nextInteger: Integer
 
   def +(that: Integer): Integer
 

@@ -12,6 +12,7 @@ object Tester extends App {
   /**
    * Tests is Integers are created correctly
    */
+  println("------Checking if Integers are created correctly------")
   println("1: " + one.printNumber)
   println("2: " + two.printNumber)
   println("3: " + three.printNumber)
@@ -114,8 +115,10 @@ object Tester extends App {
   println("4 - (-4): " + (four - minusFour).printNumber)
   println("(-1) - (-2): " + (minusOne - minusTwo).printNumber)
   println("(-2) - (-3): " + (minusTwo - minusThree).printNumber)
+  println("(-3) - (-2): " + (minusThree - minusTwo).printNumber)
   println("(-3) - (-4): " + (minusThree - minusFour).printNumber)
   println("(-1) - (-4): " + (minusOne - minusFour).printNumber)
   println("(-2) - (-4): " + (minusTwo - minusFour).printNumber)
   println("(-4) - (-4): " + (minusFour - minusFour).printNumber)
+
 }

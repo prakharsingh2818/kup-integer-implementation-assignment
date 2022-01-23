@@ -1,10 +1,10 @@
 import scala.annotation.tailrec
 
-case class SuccessiveInteger(number: Integer, sign: Sign = Positive) extends Integer {
+case class SuccessiveInteger(number: Nat, sign: Sign = Positive) extends Integer {
 
   override def isZero: Boolean = false
 
-  override def predecessor: Integer = number
+  override def predecessor: Nat = number
 
   def previousInteger: Integer = {
     if (number == Zero) {
@@ -15,7 +15,7 @@ case class SuccessiveInteger(number: Integer, sign: Sign = Positive) extends Int
     else SuccessiveInteger(this.successor, Negative)
   }
 
-  override def successor: Integer = this
+  override def successor: Nat = this
 
   def nextInteger: Integer = {
     if (number == Zero) {
@@ -30,7 +30,7 @@ case class SuccessiveInteger(number: Integer, sign: Sign = Positive) extends Int
     if (that.isZero) this
     else {
       (this.sign, that.getSign) match {
-        case (Positive, Positive) => SuccessiveInteger(number + that.successor)
+        case (Positive, Positive) => SuccessiveInteger(that + this.previousInteger)
         case (Positive, Negative) => if (this == that) Zero else (that.negate - this).negate
         case (Negative, Positive) => if (this == that) Zero else that - this.negate
         case (Negative, Negative) => (this.negate + that.negate).negate
@@ -42,7 +42,7 @@ case class SuccessiveInteger(number: Integer, sign: Sign = Positive) extends Int
     if (that.isZero) this
     else {
       (this.sign, that.getSign) match {
-        case (Positive, Positive) => if (this == that) Zero else number - that.predecessor
+        case (Positive, Positive) => if (this == that) Zero else this.previousInteger - that.previousInteger
         case (Negative, Positive) => (this.negate + that).negate
         case (Positive, Negative) => this + that.negate
         case (Negative, Negative) => if (this == that) Zero else that.negate - this.negate

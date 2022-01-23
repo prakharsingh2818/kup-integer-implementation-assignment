@@ -24,5 +24,9 @@ case object Zero extends Integer {
   override def getSign: Sign = Positive
 
   override def isPositive: Boolean = true
+
+  override def previousInteger: Integer = predecessor
+
+  override def nextInteger: Integer = successor
 }
 
