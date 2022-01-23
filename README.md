@@ -10,5 +10,5 @@
 6. isZero: checks if integer is Zero
 7: printNumber: returns actual integer representing the user defined integer
 
-### The program makes no use of the pre-definied integer class for the implementation.
+### The program makes no use of the pre-defined integer class for the implementation.
 ### Only printNumber method uses the pre defined integer class to check the correctness of the program and perform test validations
